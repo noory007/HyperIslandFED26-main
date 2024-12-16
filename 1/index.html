@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <!--We need title here that shows the My Website in the top of the tab-->
+  </head>
+  <body>
+    <header>
+      <!--<h1>Welcome to My Website</h1> In header we do not use h1-->
+      <div class="nav">
+        <!--In here, inside div I made a class by the name of nav-->
+        <a href="#home">Home</a>
+        <!--In here we do not need div-->
+        <a href="#about">About</a>
+        <!--This is wronge, we need the same as above a tag-->
+        <a href="#services">Services</a>
+        <!--We do not need div here-->
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h1>Introduction</h1>
+        <p>This is the introduction section of the website.</p>
+      </section>
+      <div id="home">
+        <h2>Home</h2>
+        <p>This is the home section of the website.</p>
+      </div>
+
+      <div id="about">
+        <h2>About</h2>
+        <p>This section contains information about us.</p>
+      </div>
+      <!--Div should be closed-->
+
+      <div id="services">
+        <!--We do not use section here, we use div instead of section here-->
+        <h2>Services</h2>
+        <!--article tag is not used here-->
+        <h3>Service 1</h3>
+        <p>Details about service 1.</p>
+
+        <!--We do not need div here anymore-->
+        <h3>Service 2</h3>
+        <p>Details about service 2.</p>
+      </div>
+
+      <div id="contact">
+        <h2>Contact</h2>
+        <address>
+          Email: <a href="mailto:info@example.com">info@example.com</a>
+          <!--We do not need <p> tag here inside the address-->
+          Phone: <a href="tel:+1234567890">+1234567890</a>
+        </address>
+      </div>
+    </main>
+
+    <footer>
+      <!--In here instead of div, I used footer-->
+      <p>&copy; 2023 My Website</p>
+    </footer>
+  </body>
+</html>
