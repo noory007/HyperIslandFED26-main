@@ -26,26 +26,20 @@
       ></textarea
       ><br /><br />
 
-      <label for="options">Prioritize Message:</label>
-      <select id="options" name="options" required>
-        <option value="option1">High</option>
-        <option value="option2">Medium</option>
-        <option value="option3">Low</option></select
+      <label for="Prioritize">Prioritize Message:</label>
+      <select id="Prioritize" name="Prioritize" required>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option></select
       ><br /><br />
 
-      <label>Contact me by:</label><br />
-      <input
-        type="radio"
-        id="radio1"
-        name="radioGroup"
-        value="radio1"
-        required
-      />
-      <label for="radio1">Phone Call</label><br />
-      <input type="radio" id="radio2" name="radioGroup" value="radio2" />
-      <label for="radio2">Text Message</label><br />
-      <input type="radio" id="radio3" name="radioGroup" value="radio3" />
-      <label for="radio3">E-mail</label><br /><br />
+      <label>Contact me back by:</label><br />
+      <input type="radio" id="call" name="radioGroup" value="call" required />
+      <label for="call">Phone Call</label><br />
+      <input type="radio" id="message" name="radioGroup" value="message" />
+      <label for="message">Text Message</label><br />
+      <input type="radio" id="email" name="radioGroup" value="email" />
+      <label for="email">E-mail</label><br /><br />
 
       <input type="submit" value="Submit" />
     </form>
