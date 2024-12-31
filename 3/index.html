@@ -7,16 +7,18 @@
   </head>
   <body>
     <form action="/submit" method="post">
-      <label for="name">Full Name:</label>
+      <h1 id="heading">Noory's LLC Contact Form</h1>
+      <label id="fname" for="name">Full Name:</label>
       <input type="text" id="name" name="name" required /><br /><br />
 
-      <label for="email">E-mail Address:</label>
+      <label id="mail" for="email">E-mail Address:</label>
       <input type="email" id="email" name="email" required /><br /><br />
 
-      <label for="phone">Phone Number:</label>
+      <label id="phoneNumber" for="phone">Phone Number:</label>
       <input type="tel" id="phone" name="phone" required /><br /><br />
 
-      <label for="message">Write Your Message Here:</label><br />
+      <label id="textMessage" for="message">Write Your Message Here:</label
+      ><br />
       <textarea
         id="message"
         name="message"
@@ -26,22 +28,27 @@
       ></textarea
       ><br /><br />
 
-      <label for="Prioritize">Prioritize Message:</label>
-      <select id="Prioritize" name="Prioritize" required>
-        <option value="High">High</option>
-        <option value="Medium">Medium</option>
-        <option value="Low">Low</option></select
+      <label id="pList" for="Prioritize">Prioritize Message:</label>
+      <select
+        id="Prioritize"
+        name="Prioritize"
+        onchange="changeColor(this)"
+        required
+      >
+        <option id="1" value="High">High</option>
+        <option id="2" value="Medium">Medium</option>
+        <option id="3" value="Low">Low</option></select
       ><br /><br />
 
-      <label>Contact me back by:</label><br />
+      <label id="RList">Contact me back by:</label><br />
       <input type="radio" id="call" name="radioGroup" value="call" required />
-      <label for="call">Phone Call</label><br />
-      <input type="radio" id="message" name="radioGroup" value="message" />
-      <label for="message">Text Message</label><br />
-      <input type="radio" id="email" name="radioGroup" value="email" />
-      <label for="email">E-mail</label><br /><br />
+      <label id="calling" for="call">Phone Call</label><br />
+      <input type="radio" id="mesg" name="radioGroup" value="message" />
+      <label id="messaging" for="message">Text Message</label><br />
+      <input type="radio" id="eml" name="radioGroup" value="email" />
+      <label id="mailing" for="email">E-mail</label><br /><br />
 
-      <input type="submit" value="Submit" />
+      <input id="butn" type="submit" value="Submit" />
     </form>
     <script src="script.js"></script>
   </body>
