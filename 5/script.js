@@ -17,7 +17,7 @@ function fetchData(url) {
     })
     .catch((error) => {
       //Here i have add the catch error to show the error in console
-      console.error("There was a problem with the fetch operation".error);
+      console.error("There was a problem with the fetch operation", error);
     });
 }
 
@@ -44,7 +44,7 @@ function postData(url, data) {
       console.log(data);
     })
     .catch((error) => {
-      console.error("There was a problem with the fetch operation".error);
+      console.error("There was a problem with the fetch operation", error);
     });
 }
 
