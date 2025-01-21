@@ -1,6 +1,7 @@
 import "./App.css";
 import Child from "./Child";
 import MyStateComponent from "./Components/MyStateComponent/MyStateComponent";
+import GameOfThronesCharacters from "./Effect/EffectsComponent";
 
 function App() {
   const person = {
@@ -19,6 +20,7 @@ function App() {
         <h1>This is React</h1>
         <Child person={person} />
         <MyStateComponent />
+        <GameOfThronesCharacters />
       </header>
       {/* TODO create a child component in proper jsx, the component takes the person object as props and render the data */}
     </div>
