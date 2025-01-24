@@ -1,5 +1,5 @@
 import React from "react";
-export function Child({ person }) {
+function Child({ person }) {
   console.log(person);
   return (
     <div>
