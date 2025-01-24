@@ -1,7 +1,11 @@
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Child from "./Child";
 import MyStateComponent from "./Components/MyStateComponent/MyStateComponent";
+import PropsComponent from "./Components/MyStateComponent/PropsComponent";
 import GameOfThronesCharacters from "./Effect/EffectsComponent";
+import HomePage from "./HomePage/HomePage";
 
 function App() {
   const person = {
@@ -22,7 +26,12 @@ function App() {
         <MyStateComponent />
         <GameOfThronesCharacters />
       </header>
-      {/* TODO create a child component in proper jsx, the component takes the person object as props and render the data */}
+      <Routes>
+        <Route index element={<HomePage />} />
+        <Route path="Props" element={<PropsComponent person={person} />} />
+        <Route path="state" element={<MyStateComponent />} />
+        <Route path="effect" element={<GameOfThronesCharacters />} />
+      </Routes>
     </div>
   );
 }
